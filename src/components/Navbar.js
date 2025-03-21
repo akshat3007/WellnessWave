@@ -47,9 +47,9 @@ const Navbar = () => {
         <img src={Logo} height={200} width={200}   alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
+        <a href="https://wellnesswave1.streamlit.app/" target="_blank">Diet</a>
+        <a href="https://wellnesswave-workout-planner.streamlit.app/" target="_blank">Exercise</a>
+        <a href="https://wellnesswave-goal.streamlit.app/" target="_blank">Progress Tracker</a>
         <a href="">Contact</a>
         <a href="">
           <BsCart2 className="navbar-cart-icon" />

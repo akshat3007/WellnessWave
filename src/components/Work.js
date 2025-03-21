@@ -7,16 +7,19 @@ import Tracking from "../Assets/track.png";
 const Work = () => {
   const workInfoData = [
     {
+      link: "https://wellnesswave1.streamlit.app/" ,
       image: PickMeals,
       title: "Diet Recommender",
       text: "Get personalized meal suggestions based on your nutritional needs and health goals, powered by our AI-driven diet tool.",
     },
     {
+      link: "https://wellnesswave-workout-planner.streamlit.app/" ,
       image: Exercise,
       title: "Exercise Recommender",
       text: "Discover tailored workout routines designed to match your fitness goals, pace, and preferences with our smart exercise recommender.",
     },
     {
+      link: "https://wellnesswave-goal.streamlit.app/" ,
       image: Tracking,
       title: "Progress Tracker",
       text: "Monitor your fitness journey by tracking changes in weight, muscle mass, and other key metrics to stay motivated and on target.",
@@ -35,7 +38,9 @@ const Work = () => {
         {workInfoData.map((data) => (
           <div className="work-section-info" key={data.title}>
             <div className="info-boxes-img-container">
-              <img src={data.image} alt="" />
+              <a href={data.link} target="_blank" rel="noopener noreferrer">
+                <img src={data.image} alt="" />
+              </a>
             </div>
             <h2>{data.title}</h2>
             <p>{data.text}</p>
